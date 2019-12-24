@@ -1,0 +1,4 @@
+services:
+    event_mutation_type_api:
+        class: \PoP\EventMutationsWPEM\TypeAPIs\EventMutationTypeAPI
+        public: true
