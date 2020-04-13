@@ -31,8 +31,6 @@ $ composer require getpop/event-mutations-wp-em dev-master
 }
 ```
 
-([PoP](https://github.com/leoloso/PoP) must be installed)
-
 <!--
 ## Usage
 
