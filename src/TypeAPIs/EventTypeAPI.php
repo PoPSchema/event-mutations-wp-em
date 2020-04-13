@@ -59,8 +59,8 @@ class EventMutationTypeAPI extends PostTypeAPI implements EventMutationTypeAPIIn
         $EM_Event->event_end_time = $post_data['when']['totime'] . ':00';
 
         //Start/End times should be available as timestamp
-        $EM_Event->start = strtotime($EM_Event->event_start_date." ".$EM_Event->event_start_time);
-        $EM_Event->end = strtotime($EM_Event->event_end_date." ".$EM_Event->event_end_time);
+        $EM_Event->start = strtotime($EM_Event->event_start_date . " " . $EM_Event->event_start_time);
+        $EM_Event->end = strtotime($EM_Event->event_end_date . " " . $EM_Event->event_end_time);
 
         //Set Blog ID
         if (\is_multisite()) {
