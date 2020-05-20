@@ -1,2 +1,2 @@
 <?php
-\PoP\EventMutationsWPEM\Component::init();
+//\PoP\EventMutationsWPEM\Component::initialize();
