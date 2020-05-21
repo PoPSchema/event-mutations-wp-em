@@ -20,12 +20,13 @@ Via Composer
 composer require getpop/event-mutations-wp-em
 ```
 
-<!--
 ## Usage
 
+Initialize the component:
+
 ``` php
+\PoP\EventMutationsWPEM\Component::initialize();
 ```
--->
 
 ## Standards
 
