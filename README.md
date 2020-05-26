@@ -25,7 +25,9 @@ composer require getpop/event-mutations-wp-em
 Initialize the component:
 
 ``` php
-\PoP\EventMutationsWPEM\Component::initialize();
+\PoP\Root\ComponentLoader::initializeComponents([
+    \PoP\EventMutationsWPEM\Component::class,
+]);
 ```
 
 ## Standards
