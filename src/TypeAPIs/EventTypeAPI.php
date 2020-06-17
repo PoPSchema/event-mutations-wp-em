@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace PoP\EventMutationsWPEM\TypeAPIs;
 
-use PoP\PostsWP\TypeAPIs\PostTypeAPI;
+use PoP\CustomPostsWP\TypeAPIs\CustomPostTypeAPI;
 use PoP\EventMutations\TypeAPIs\EventMutationTypeAPIInterface;
 
 /**
  * Methods to interact with the Type, to be implemented by the underlying CMS
  */
-class EventMutationTypeAPI extends PostTypeAPI implements EventMutationTypeAPIInterface
+class EventMutationTypeAPI extends CustomPostTypeAPI implements EventMutationTypeAPIInterface
 {
     public function populate(&$EM_Event, $post_data)
     {
