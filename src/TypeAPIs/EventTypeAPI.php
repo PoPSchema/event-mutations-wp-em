@@ -36,7 +36,7 @@ class EventMutationTypeAPI extends CustomPostTypeAPI implements EventMutationTyp
         $EM_Event->ancestors = array();
 
         // post_status might be empty (for publish)
-        if ($status = $post_data['post-status']) {
+        if ($status = $post_data['custom-post-status']) {
             $EM_Event->force_status = $status;
         }
 
