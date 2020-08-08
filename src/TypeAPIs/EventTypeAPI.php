@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace PoP\EventMutationsWPEM\TypeAPIs;
+namespace PoPSchema\EventMutationsWPEM\TypeAPIs;
 
-use PoP\CustomPostsWP\TypeAPIs\CustomPostTypeAPI;
-use PoP\EventMutations\TypeAPIs\EventMutationTypeAPIInterface;
+use PoPSchema\CustomPostsWP\TypeAPIs\CustomPostTypeAPI;
+use PoPSchema\EventMutations\TypeAPIs\EventMutationTypeAPIInterface;
 
 /**
  * Methods to interact with the Type, to be implemented by the underlying CMS

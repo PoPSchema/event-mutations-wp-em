@@ -1,5 +1,5 @@
 {
-    "name": "getpop/event-mutations-wp-em",
+    "name": "pop-schema/event-mutations-wp-em",
     "type": "library",
     "description": "Implementation for WordPress of contracts from package \"Event Mutations\", through plugin \"Events Manager\"",
     "keywords": [
@@ -19,7 +19,7 @@
     "prefer-stable": true,
     "require": {
         "php": "~7.2",
-        "getpop/event-mutations": "~0.1"
+        "pop-schema/event-mutations": "~0.1"
     },
     "require-dev": {
         "phpstan/phpstan": "^0.12",
@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "PoP\\EventMutationsWPEM\\": "src"
+            "PoPSchema\\EventMutationsWPEM\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PoP\\EventMutationsWPEM\\": "tests"
+            "PoPSchema\\EventMutationsWPEM\\": "tests"
         }
     },
     "scripts": {
