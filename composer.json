@@ -19,6 +19,7 @@
     "prefer-stable": true,
     "require": {
         "php": "~7.2",
+        "pop-schema/events-wp-em": "dev-master",
         "pop-schema/event-mutations": "dev-master"
     },
     "require-dev": {
