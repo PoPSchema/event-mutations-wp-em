@@ -1,4 +1,6 @@
 services:
-    event_mutation_type_api:
-        class: \PoPSchema\EventMutationsWPEM\TypeAPIs\EventMutationTypeAPI
+    _defaults:
         public: true
+
+    PoPSchema\EventMutations\TypeAPIs\EventMutationTypeAPIInterface:
+        class: \PoPSchema\EventMutationsWPEM\TypeAPIs\EventMutationTypeAPI
