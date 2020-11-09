@@ -16,7 +16,7 @@ class EventMutationTypeAPI extends CustomPostTypeAPI implements EventMutationTyp
     {
         // Copied from function get_post($validate = true) in events-manager/classes/em-event.php
         $EM_Event->post_content = $post_data['post-content'];
-        $EM_Event->event_name = $post_data['post-title'];
+        $EM_Event->event_name = $post_data['custompost-title'];
         $EM_Event->post_type = \EM_POST_TYPE_EVENT;
 
         // Comment Leo 13/03/2016: this line is MANDATORY! When it is not there, the post_except will be set as NULL,
