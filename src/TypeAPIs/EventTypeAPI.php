@@ -15,8 +15,8 @@ class EventMutationTypeAPI extends CustomPostTypeAPI implements EventMutationTyp
     public function populate(&$EM_Event, $post_data)
     {
         // Copied from function get_post($validate = true) in events-manager/classes/em-event.php
-        $EM_Event->post_content = $post_data['post-content'];
-        $EM_Event->event_name = $post_data['custompost-title'];
+        $EM_Event->post_content = $post_data['content'];
+        $EM_Event->event_name = $post_data['title'];
         $EM_Event->post_type = \EM_POST_TYPE_EVENT;
 
         // Comment Leo 13/03/2016: this line is MANDATORY! When it is not there, the post_except will be set as NULL,
@@ -36,7 +36,7 @@ class EventMutationTypeAPI extends CustomPostTypeAPI implements EventMutationTyp
         $EM_Event->ancestors = array();
 
         // post_status might be empty (for publish)
-        if ($status = $post_data['custom-post-status']) {
+        if ($status = $post_data['status']) {
             $EM_Event->force_status = $status;
         }
 
