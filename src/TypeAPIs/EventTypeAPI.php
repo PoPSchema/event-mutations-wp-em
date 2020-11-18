@@ -6,14 +6,17 @@ namespace PoPSchema\EventMutationsWPEM\TypeAPIs;
 
 use PoPSchema\CustomPostsWP\TypeAPIs\CustomPostTypeAPI;
 use PoPSchema\EventMutations\TypeAPIs\EventMutationTypeAPIInterface;
+use EM_Event;
 
 /**
  * Methods to interact with the Type, to be implemented by the underlying CMS
  */
 class EventMutationTypeAPI extends CustomPostTypeAPI implements EventMutationTypeAPIInterface
 {
-    public function populate(&$EM_Event, $post_data)
+    public function populate(object &$event, array $post_data): void
     {
+        /** @var EM_Event */
+        $EM_Event = &$event;
         // Copied from function get_post($validate = true) in events-manager/classes/em-event.php
         $EM_Event->post_content = $post_data['content'];
         $EM_Event->event_name = $post_data['title'];
