@@ -49,7 +49,7 @@ class EventMutationTypeAPI extends CustomPostTypeAPI implements EventMutationTyp
         $EM_Event->event_end_date = $post_data['when']['to'];
 
         // Location
-        if ($post_data['location']) {
+        if ($post_data['location'] ?? null) {
             $EM_Location = \em_get_location($post_data['location'], 'post_id');
             $EM_Event->location_id = $EM_Location->location_id;
         }
